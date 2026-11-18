@@ -39,7 +39,8 @@ a { color: var(--navy-2); }
 }
 .hero-logo { border-radius: 50%; background: #fff; }
 .hero-area { margin: 10px 0 0; font-size: 0.85rem; letter-spacing: 0.08em; opacity: 0.85; }
-.hero h1 { margin: 2px 0 0; font-size: 2.4rem; letter-spacing: 0.06em; line-height: 1.2; }
+.hero h1 { margin: 2px 0 0; font-size: 2.1rem; letter-spacing: 0.06em; line-height: 1.25; }
+.h1-lead { display: block; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.04em; opacity: 0.85; margin-bottom: 2px; }
 .catch { margin: 6px 0 0; font-size: 1.5rem; font-weight: 700; }
 .catch strong { color: #ffd54a; }
 .sub { margin: 6px 0 0; font-size: 0.9rem; opacity: 0.9; }
@@ -88,6 +89,12 @@ a { color: var(--navy-2); }
 .lead { margin: 4px 0 14px; color: var(--muted); font-size: 0.9rem; }
 .notice { color: var(--muted); font-size: 0.8rem; margin: 12px 0 0; }
 .pending { color: var(--muted); }
+
+/* ---- 販売・買取 ---- */
+.services { display: grid; gap: 12px; margin-top: 14px; }
+.service { background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--red); border-radius: var(--radius); padding: 14px 16px; }
+.service h3 { margin: 0 0 4px; font-size: 1.1rem; color: var(--navy); }
+.service p { margin: 0; font-size: 0.92rem; color: var(--muted); }
 
 /* ---- 買取表 ---- */
 .tabs { display: flex; gap: 6px; margin-top: 10px; }
@@ -167,7 +174,9 @@ a { color: var(--navy-2); }
 .footer-name { font-weight: 700; color: #fff; font-size: 1rem; }
 
 @media (min-width: 720px) {
-  .hero h1 { font-size: 3rem; }
+  .hero h1 { font-size: 2.8rem; }
+  .h1-lead { font-size: 1rem; }
+  .services { grid-template-columns: 1fr 1fr; }
   .cta { grid-template-columns: 1fr 1fr; max-width: 520px; }
   .cta-line { grid-template-columns: 1fr; max-width: 360px; }
   .hero { padding: 44px 0 48px; }
