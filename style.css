@@ -44,7 +44,6 @@ a { color: var(--navy-2); }
 .catch { margin: 8px 0 0; font-size: 1.3rem; font-weight: 700; line-height: 1.4; }
 .catch strong { color: #ffd54a; }
 .sub { margin: 8px auto 0; max-width: 34em; font-size: 0.85rem; opacity: 0.9; }
-.nb-line { display: block; }
 
 .hours {
   margin: 18px auto 0;
@@ -189,3 +188,5 @@ a { color: var(--navy-2); }
 
 .nb { display: inline-block; }
 @media (max-width: 480px) { .catch .sep { display: none; } }
+.nb.nb-line { display: block; }
+@media (min-width: 720px) { .sub { max-width: 46em; } }
