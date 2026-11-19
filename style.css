@@ -190,3 +190,5 @@ a { color: var(--navy-2); }
 @media (max-width: 480px) { .catch .sep { display: none; } }
 .nb.nb-line { display: block; }
 @media (min-width: 720px) { .sub { max-width: 46em; } }
+.nw { white-space: nowrap; }
+.footer-license { font-size: 0.75rem; color: #aab4c8; margin-top: 8px; }
