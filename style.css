@@ -8,6 +8,7 @@
   --muted: #5d6578;
   --line: #dfe2ea;
   --line-green: #06c755;
+  --gold: #ffd54a;
   --radius: 14px;
 }
 
@@ -169,6 +170,76 @@ a { color: var(--navy-2); }
 .map { margin-top: 16px; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); }
 .map iframe { display: block; width: 100%; height: 320px; border: 0; }
 
+/* ---- 最低買取保証 ---- */
+.guarantee { background: linear-gradient(180deg, var(--navy) 0%, var(--navy-2) 100%); color: #fff; border-top: 6px solid var(--red); }
+.guarantee h2 { color: #fff; }
+.guarantee .lead { color: #cfd6e4; }
+.guarantee .lead strong { color: var(--gold); }
+.guarantee .notice { color: #aab4c8; }
+.g-list { list-style: none; margin: 14px 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.g-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  color: var(--navy);
+  border-radius: var(--radius);
+  border-top: 5px solid var(--gold);
+  padding: 12px 8px 10px;
+}
+.g-item-wide { grid-column: 1 / -1; }
+.g-name { font-weight: 800; font-size: 1.15rem; line-height: 1.3; }
+.g-note { margin-top: 4px; font-size: 0.7rem; font-weight: 700; background: var(--gold); color: var(--navy); border-radius: 999px; padding: 1px 8px; line-height: 1.6; }
+.g-per { margin-top: 6px; font-size: 0.75rem; color: var(--muted); }
+.g-price { margin-top: auto; font-size: 2rem; font-weight: 800; color: var(--red); line-height: 1.1; letter-spacing: 0.01em; }
+.g-price small { font-size: 0.5em; margin-left: 1px; }
+.g-sub {
+  margin: 14px auto 0;
+  width: fit-content;
+  max-width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  padding: 6px 16px 6px 6px;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+.g-sub::before { content: "※"; margin: 0 2px 0 6px; color: var(--gold); }
+.g-sub-tag { display: inline-block; background: var(--gold); color: var(--navy); font-weight: 800; border-radius: 999px; padding: 0 10px; margin-right: 6px; }
+.g-sub b { color: var(--gold); font-size: 1.15em; }
+.g-bulk { margin: 16px 0 0; text-align: center; font-weight: 800; font-size: 1.1rem; color: var(--gold); line-height: 1.5; }
+.g-bulk .nb + .nb { margin-left: 0.6em; color: #fff; }
+
+/* ---- Googleクチコミ ---- */
+.review {
+  margin-top: 16px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--red);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+.review-body { flex: 1; min-width: 0; }
+.review h3 { margin: 0 0 4px; font-size: 1.1rem; color: var(--navy); }
+.review p { margin: 0 0 12px; font-size: 0.92rem; color: var(--muted); }
+.btn-review { background: var(--navy); color: #fff; border-bottom: 3px solid var(--gold); }
+.review-qr { flex: none; margin: 0; text-align: center; }
+.review-qr img {
+  display: block;
+  width: 160px;
+  height: 160px;
+  background: #fff;
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  padding: 4px;
+}
+.review-qr figcaption { margin-top: 4px; font-size: 0.72rem; color: var(--muted); }
+@media (max-width: 599px) { .review-qr { display: none; } }
+
 .footer { background: var(--navy); color: #cfd6e4; text-align: center; padding: 24px 0; font-size: 0.85rem; }
 .footer p { margin: 2px 0; }
 .footer-name { font-weight: 700; color: #fff; font-size: 1rem; }
@@ -180,6 +251,12 @@ a { color: var(--navy-2); }
   .cta { grid-template-columns: 1fr 1fr; max-width: 520px; }
   .cta-line { grid-template-columns: 1fr; max-width: 360px; }
   .hero { padding: 44px 0 48px; }
+  .g-list { grid-template-columns: repeat(5, 1fr); }
+  .g-item-wide { grid-column: auto; }
+  .g-name { font-size: 1.05rem; }
+  .g-price { font-size: 1.9rem; }
+  .g-item { padding: 12px 4px 10px; }
+  .g-note { font-size: 0.6rem; padding: 1px 6px; white-space: nowrap; }
 }
 
 @media (prefers-reduced-motion: reduce) {
