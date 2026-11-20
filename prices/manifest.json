@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-20T20:24:55+09:00",
+  "generated_at": "2026-11-20T23:31:57+09:00",
   "tables": [
     {
       "id": "psa10",
       "label": "PSA10",
       "date": "2026-11-20",
-      "updated_at": "2026-11-20T20:23:36.932780+09:00",
+      "updated_at": "2026-11-20T23:29:58.308782+09:00",
       "images": [
         "prices/psa10_1.webp",
         "prices/psa10_2.webp",
