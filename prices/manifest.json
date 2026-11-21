@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-20T23:31:57+09:00",
+  "generated_at": "2026-11-21T12:50:15+09:00",
   "tables": [
     {
       "id": "psa10",
       "label": "PSA10",
-      "date": "2026-11-20",
-      "updated_at": "2026-11-20T23:29:58.308782+09:00",
+      "date": "2026-11-21",
+      "updated_at": "2026-11-21T12:49:38.663728+09:00",
       "images": [
         "prices/psa10_1.webp",
         "prices/psa10_2.webp",
@@ -22,7 +22,7 @@
     {
       "id": "pack",
       "label": "バラパック",
-      "date": "2026-11-20",
+      "date": "2026-11-21",
       "updated_at": null,
       "images": [
         "prices/pack.webp"

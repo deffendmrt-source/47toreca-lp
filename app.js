@@ -77,7 +77,10 @@
   }
 
   function init(m) {
-    var tables = m.tables || [];
+    // 画像のない（未生成の）表のタブは出さない。すべて空のときだけ「準備中」表示のために全タブを残す
+    var all = m.tables || [];
+    var tables = all.filter(function (t) { return t.images && t.images.length; });
+    if (!tables.length) tables = all;
     var v = m.generated_at || "";
     var tabs = document.getElementById("tabs");
     tabs.replaceChildren();
